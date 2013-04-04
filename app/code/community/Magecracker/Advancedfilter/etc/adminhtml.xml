@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <attribute_filter_section translate="title" module="magecracker_advancedfilter">
+                                            <title>Advanced Product Filter by Attribute</title>
+                                            <sort_order>500</sort_order>
+                                    </attribute_filter_section>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+             	 </children>
+      	 	 </admin>
+        </resources>
+    </acl>
+</config>

@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<config>
+    <tabs>
+        <attribute_filter_tab module="magecracker_advancedfilter" translate="label">
+            <label>Magecracker</label>
+            <sort_order>5000000</sort_order>
+        </attribute_filter_tab>
+    </tabs>
+    <sections>
+        <attribute_filter_section module="magecracker_advancedfilter" translate="label">
+            <label>Product Filter by Attribute</label>
+            <sort_order>500</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <tab>attribute_filter_tab</tab>
+            <groups>
+                <settings_group translate="label">
+                    <label>Advance Product Filter Settings</label>
+                    <comment></comment>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <use_attribute_filter translate="label">
+                            <label>Enable Product Filter</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </use_attribute_filter>
+                        <filter_attribute>
+                        	<label>Attribute to filter by</label>
+                        	<frontend_type>multiselect</frontend_type>
+                        	<source_model>magecracker_advancedfilter/attributes</source_model>
+                        	<sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </filter_attribute>
+                         <use_category_filter translate="label">
+                            <label>Enable Category Filter</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </use_category_filter>     
+                        <use_product_thumbnail translate="label">
+                            <label>Enable Product Thumbnail</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </use_product_thumbnail> 
+                    </fields>
+                </settings_group>
+            </groups>
+        </attribute_filter_section>
+    </sections>
+</config>

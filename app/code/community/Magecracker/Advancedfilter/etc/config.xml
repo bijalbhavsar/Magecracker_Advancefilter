@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Magecracker_Advancedfilter>
+			<version>1.0.1</version>
+		</Magecracker_Advancedfilter>
+	</modules> 
+	<global>
+		<models>
+			<magecracker_advancedfilter>
+				<class>Magecracker_Advancedfilter_Model</class>
+			</magecracker_advancedfilter> 
+			<catalog_resource>
+				<rewrite> 
+					<product_collection>Magecracker_Advancedfilter_Model_Resource_Product_Collection</product_collection>
+				</rewrite> 
+			</catalog_resource>
+		</models> 
+		<helpers>
+			<magecracker_advancedfilter>
+				<class>Magecracker_Advancedfilter_Helper</class>
+			</magecracker_advancedfilter>
+		</helpers>
+
+		<blocks>
+			<magecracker_advancedfilter>
+				<class>Magecracker_Advancedfilter_Block</class>
+			</magecracker_advancedfilter>
+			<adminhtml>
+				<rewrite>
+					<catalog_product_grid>Magecracker_Advancedfilter_Block_Grid</catalog_product_grid> 
+					<widget_grid_column_renderer_options>Magecracker_Advancedfilter_Block_Widget_Column_Renderer_Options</widget_grid_column_renderer_options> 
+				</rewrite>
+			</adminhtml> 
+		</blocks> 
+	</global> 
+	 <adminhtml>
+		<layout>
+			<updates>
+				<magecracker_advancedfilter>
+					<file>advancedfilter.xml</file> 
+				</magecracker_advancedfilter>
+			</updates>
+		</layout>
+	</adminhtml>
+</config>

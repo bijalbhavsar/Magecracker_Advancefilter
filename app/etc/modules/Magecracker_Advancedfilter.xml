@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magecracker_Advancedfilter>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Magecracker_Advancedfilter>
+    </modules>
+</config>
