@@ -7,6 +7,7 @@ Advancedfilter is an extension to add category, product Image, Other filterable 
 
 To display custom attributes, category, and product image we have to select attributes from System >> Configuration >> Magecracker >> Advancefilter
  
+Before installation please disable compilation from Magento Admin >> System >> Tools >> Compilation, and also refresh cache from Magento Admin >> System >> Cache Management.
 
 Features
 ========
